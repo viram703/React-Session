@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
-import ReactDom from 'react-dom';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 class Home extends Component
 {
@@ -25,12 +24,13 @@ class Home extends Component
     return (
       <div className="App">
         <form >
-            <h2>Dollar Jar App using React</h2>
+            <h2>Dollar jar </h2>
+            <p>Welcome to dollar jar application</p>
           <input type="text" onChange={this.updateName} placeholder="Enter your name" ></input>
           <Link
           to={{
             pathname: "/User",
-            state: { name:this.state.name }
+            name:this.state.name
             }}>
 
           <button type='button'>Submit</button></Link>
