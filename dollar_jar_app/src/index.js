@@ -12,13 +12,9 @@ const routing=(<Router>
         <Route exact path="/" component={Home}>
         </Route>
     </div>
-    <div>
+    <div>   
         <Route  path="/User" component={User}>
         </Route>
-    </div>
-    <div>
-        <route exact path="/User.js">
-        </route>
     </div>
 </Router>);
 ReactDOM.render(routing,document.getElementById('root'));
